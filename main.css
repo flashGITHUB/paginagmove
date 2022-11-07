@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "font";
+  src: url("media/font.ttf") format("truetype");
+}
+
+.botonhead {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 4px 1px 3px #666666;
+  font-family: Arial;
+  color: #4eedd8;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.botonhead a:link{
+  text-decoration: none;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  background: #8e9eab;
+  box-shadow: 1px 3px 6px black;
+  border-radius: 10px;
+}
+
+
+
+.contenedor {
+  width: 10px;
+  height: 10px;
+}
+
+.texto {
+ 
+  color: White;
+  font-family: Arial;
+  font-size: 18px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+body{
+  background: #8e9eab;
+  background: -webkit-linear-gradient(to right, #dde3e6, #8e9eab);
+  overflow-x:hidden;
+}
+
+.prod{
+  width: 450px;
+  height: 450px;
+  background-size: contain;
+}
+
+.descripcion{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 220px;
+  left: 0px;
+  width: 450px;
+  height: 150px;
+}
+
+
+/* CSS */
+.button-57 {
+  width: 135px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  display: inline-block;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 1px 0px black;
+  font-family: "font", monospace;
+  color: white;
+  top: 400px;
+  left: 165px;
+  border-radius: 10px;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.button-57:hover {
+  width: 200px;
+  left: 120px;
+}
